@@ -13,10 +13,29 @@
         </div>
         <div class="shop-panel-header">
           <div class="search">
-            <span class="icon-loup"></span> Поиск
+            <span>
+              <img src="img/i/icon-search.svg" alt="Поиск">
+            </span>
+              Поиск
           </div>
-            <a class="bookmarks" href="#"><span class="icon-bookmarks"></span> Закладки: <span>0</span></a>
-            <a class="basket" href="#"><span class="icon-basket"></span> Корзина: <span>0</span></a>
+            <a class="shop-panel-item" href="#">
+              <span>
+                <img src="img/i/icon-bookmark.svg" alt="Закладки">
+              </span>
+                Закладки:
+              <span>
+                0
+              </span>
+            </a>
+            <a class="shop-panel-item" href="#">
+              <span>
+                <img src="img/i/icon-cart.svg" alt="Корзина">
+              </span>
+                Корзина:
+              <span>
+                0
+              </span>
+            </a>
             <a class="order" href="#">Оформить заказ</a>
         </div>
       </div>
@@ -25,12 +44,28 @@
       <div class="header-info">
         <h1 class="index-h1">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
         <div class="header-contacts">
-          <p class="phone"><span class="icon-phone"></span> +7(812)555-05-55</p>
+          <p class="phone">
+            <span>
+              <img src="img/i/icon-phone.svg" alt="Телефон">
+            </span>
+              +7(812)555-05-55
+          </p>
           <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul class="login">
-          <li><a class="login-enter" href="#"><span class="icon-enter"></span> Войти</a></li>
-          <li><a class="registration" href="#">Регистрация</a></li>
+          <li>
+            <a class="login-enter" href="#">
+              <span>
+                <img src="img/i/icon-login.svg" alt="Войти">
+              </span>
+                Войти
+            </a>
+          </li>
+          <li>
+            <a class="registration" href="#">
+              Регистрация
+            </a>
+          </li>
         </ul>
       </div>
       <!-- конец Информационной части Шапки -->
@@ -49,6 +84,98 @@
       <!-- конец главной Навигации -->
     </header>
     <main class="container">
+      <!--начало Секции Промо-блока -->
+      <section class="promo">
+        <h2 class="visually-hidden">
+          Промо-блок
+        </h2>
+        <nav class="nav-promo">
+          <ul class="nav-promo-list">
+            <li class="nav-promo-item">
+              <span>new</span>
+              <p>
+                Материалы
+              </p>
+              <a class="button-promo-list" href="#">
+                на любой вкус
+              </a>
+              <img class="icon-promo" src="img/promo/icon-1.svg" alt="Материалы">
+            </li>
+            <li class="nav-promo-item">
+              <p>
+                Инструмент
+              </p>
+              <a class="button-promo-list" href="#">
+                на все случаи жизни
+              </a>
+              <img class="icon-promo" src="img/promo/icon-2.svg" alt="Инструмент">
+            </li>
+            <li class="nav-promo-item">
+              <p>
+                Техника
+              </p>
+              <a class="button-promo-list" href="#">
+                для стройки
+              </a>
+              <img class="icon-promo" src="img/promo/icon-3.svg" alt="Техника">
+            </li>
+          </ul>
+        </nav>
+        <!-- начало Слайдера -->
+        <article class="slider">
+          <div class="slider-item">
+            <img src="img/slider/drills.jpg" width="620" height="266" alt="Дрели">
+            <h1 class="slider-h1">
+              дрели
+            </h1>
+            <p>
+              Соседям на радость!
+            </p>
+          </div>
+          <div class="slider-item">
+            <img src="img/slider/perforators.jpg" width="620" height="266" alt="Перфораторы">
+            <h1 class="slider-h1">
+              перфораторы
+            </h1>
+            <p>
+              Настоящие мужские игрушки
+            </p>
+          </div>
+          <span class="icon-left">
+            <a href="#"><img src="img/i/icon-left" alt="Влево"></a>
+          </span>
+          <span class="icon-right">
+            <a href="#"><img src="img/i/icon-right" alt="Вправо"></a>
+          </span>
+          <a class="button-slider" href="#">
+            открыть каталог
+          </a>
+          <span class="icon-dot">
+          </span>
+        </article>
+        <!-- конец Слайдера -->
+        <ul class="services-list">
+          <li class="services-item">
+            <p>
+              Скидки 50%
+            </p>
+            <a class="button-services-list" href="#">
+              на 350 товаров
+            </a>
+            <img class="icon-promo" src="img/promo/icon-4.svg" alt="Товары">
+          </li>
+          <li class="services-item">
+            <p>
+              Доставка
+            </p>
+            <a class="button-services-list" href="#">
+              бесплатно
+            </a>
+            <img class="icon-promo" src="img/promo/icon-5.svg" alt="Доставка">
+          </li>
+        </ul>
+      </section>
+      <!--конец Секции Промо-блока -->
       <!--начало Секции О Компании -->
       <section class="about">
         <h2>Компания «Техномарт»</h2>
@@ -108,9 +235,9 @@
           Все права защищены
         </div>
         <div class="social">
-          <a href="https://vk.com/" target="_blank"><img src="vk.jpg" alt="vk"></a>
-          <a href="https://www.facebook.com/" target="_blank"><img src="fb.jpg" alt="fb"></a>
-          <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpg" alt="insta"></a>
+          <a href="https://vk.com/" target="_blank"><img src="img/i/icon-vk.svg" alt="vkontakte"></a>
+          <a href="https://www.facebook.com/" target="_blank"><img src="img/i/icon-fb.svg" alt="facebook"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="img/i/icon-insta.svg" alt="instagram"></a>
         </div>
         <div class="feedback">
           <p>Обратная связь:<br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
