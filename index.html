@@ -9,14 +9,17 @@
       <!-- начало Верхнего меню -->
       <div class="top-header">
         <div class="logo">
-          <a href="index.html">техномарт</a>
+          <a href="index.html"><img src="img/i/logo-technomart.svg" alt="Логотип Техномарта"></a>
         </div>
         <div class="shop-panel-header">
           <div class="search">
-            <span>
-              <img src="img/i/icon-search.svg" alt="Поиск">
-            </span>
-              Поиск
+            <form class="search-form" action="#" method="get">
+              <label class="search_label">
+                <span class="search_icon" aria-label="Search"><img src="img/i/icon-search.svg" alt="Поиск"></span>
+                Поиск:
+                <input class="search_input" type="search" name="search">
+              </label>
+            </form>
           </div>
             <a class="shop-panel-item" href="#">
               <span>
@@ -48,25 +51,38 @@
             <span>
               <img src="img/i/icon-phone.svg" alt="Телефон">
             </span>
-              +7(812)555-05-55
+            <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
           </p>
           <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <ul class="login">
-          <li>
-            <a class="login-enter" href="#">
-              <span>
-                <img src="img/i/icon-login.svg" alt="Войти">
-              </span>
+        <!-- Вход в Личный кабинет: неактивный (начало) -->
+        <div class="login">
+          <ul>
+            <li>
+              <a class="login-enter" href="#">
+                <span><img src="img/i/icon-login.svg" alt="Войти"></span>
                 Войти
-            </a>
-          </li>
-          <li>
-            <a class="registration" href="#">
+              </a>
+            </li>
+            <li>
+              <a class="registration" href="#">
               Регистрация
-            </a>
-          </li>
-        </ul>
+              </a>
+            </li>
+            </ul>
+        </div>
+        <!-- Вход в Личный кабинет: неактивный (конец) -->
+        <!-- Личный кабинет активный (начало) -->
+        <div class="user-active visually-hidden">
+          <span><img src="img/i/icon-user.svg" alt="Пользователь"></span>
+          <a class="user" href="#">Равшан Джамшутович</a>
+          <span><a href="#"><img src="img/i/icon-logout.svg" alt="Выход"></a></span>
+          <ul class="login-active">
+            <li><a class="my-orders" href="#">Мои заказы</a></li>
+            <li><a class="private-office" href="#">Личный кабинет</a></li>
+          </ul>
+        </div>
+        <!-- Личный кабинет активный (конец) -->
       </div>
       <!-- конец Информационной части Шапки -->
       <!-- начало главной Навигации -->
@@ -131,8 +147,11 @@
             <p>
               Соседям на радость!
             </p>
+            <a class="button-slider" href="#">открыть каталог</a>
+            <button class="btn-dot-active"><img src="img/btn/slider-dots-active.svg" alt="Переключатель (активен)"></button>
+            <button class="btn-dot"><img src="img/btn/slider-dots.svg" alt="Переключатель"></button>
           </div>
-          <div class="slider-item">
+          <div class="slider-item visually-hidden">
             <img src="img/slider/perforators.jpg" width="620" height="266" alt="Перфораторы">
             <h1 class="slider-h1">
               перфораторы
@@ -140,18 +159,12 @@
             <p>
               Настоящие мужские игрушки
             </p>
+            <a class="button-slider" href="#">открыть каталог</a>
+            <button class="btn-dot-active"><img src="img/btn/slider-dots-active.svg" alt="Переключатель (активен)"></button>
+            <button class="btn-dot"><img src="img/btn/slider-dots.svg" alt="Переключатель"></button>
           </div>
-          <span class="icon-left">
-            <a href="#"><img src="img/i/icon-left" alt="Влево"></a>
-          </span>
-          <span class="icon-right">
-            <a href="#"><img src="img/i/icon-right" alt="Вправо"></a>
-          </span>
-          <a class="button-slider" href="#">
-            открыть каталог
-          </a>
-          <span class="icon-dot">
-          </span>
+          <button class="bth-left"><a href="#"><img src="img/i/icon-left" alt="Влево"></a></button>
+          <button class="btn-right"><a href="#"><img src="img/i/icon-right" alt="Вправо"></a></button>
         </article>
         <!-- конец Слайдера -->
         <ul class="services-list">
@@ -203,7 +216,7 @@
     <footer>
       <div class="bottom-header">
         <div class="logo">
-          <a href="index.html">техномарт</a>
+          <a href="index.html"><img src="img/i/logo-technomart.svg" alt="Логотип Техномарта"></a>
         </div>
         <nav class="bottom-navigation">
           <ul>
@@ -235,14 +248,38 @@
           Все права защищены
         </div>
         <div class="social">
-          <a href="https://vk.com/" target="_blank"><img src="img/i/icon-vk.svg" alt="vkontakte"></a>
-          <a href="https://www.facebook.com/" target="_blank"><img src="img/i/icon-fb.svg" alt="facebook"></a>
-          <a href="https://www.instagram.com/" target="_blank"><img src="img/i/icon-insta.svg" alt="instagram"></a>
+          <a href="https://vk.com/" target="_blank"><img src="img/i/icon-vk.svg" alt="Вконтакте"></a>
+          <a href="https://www.facebook.com/" target="_blank"><img src="img/i/icon-fb.svg" alt="Фейсбук"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="img/i/icon-insta.svg" alt="Инстаграм"></a>
         </div>
         <div class="feedback">
           <p>Обратная связь:<br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
           <p>Разработано:<br><a href="https://htmlacademy.ru" target="_blank">htmlacademy.ru</a></p>
         </div>
+      </div>
+      <!-- Большая карта -->
+      <div class="item-map-big">
+        <button class="btn-closed"><img src="img/i/icon-close.svg" alt="Закрыть окно"></button>
+        <img src="img/map-big.jpg" width="970" height="476" alt="Карта проезда">
+      </div>
+      <!-- Модальное окно Форма обратной связи -->
+      <div class="item-feedback">
+        <button class="btn-closed"><img src="img/i/icon-close.svg" alt="Закрыть окно"></button>
+        <form class="form-feedback" action="#" method="post">
+          <label class="main-form-label">
+            <span class="main-form-label-text">Ваше имя:</span>
+            <input class="main-form-label-input" type="text" name="username" placeholder="Имя Фамилия" required>
+          </label>
+          <label class="main-form-label">
+            <span class="main-form-label-text">Ваше e-mail:</span>
+            <input class="main-form-label-input" type="email" name="email" placeholder="email@example.com" required>
+          </label>
+          <label class="main-form-label">
+            <span class="main-form-label-text">Текст письма:</span>
+            <input class="main-form-label-input" type="text" name="massage" placeholder="В свободной форме" required>
+          </label>
+          <input type="submit" value="Отправить">
+        </form>
       </div>
     </footer>
   </body>
