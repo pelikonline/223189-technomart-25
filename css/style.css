@@ -1,0 +1,597 @@
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/web/cuprum.woff2') format('woff2'),
+         url('../fonts/web/cuprumbold.woff2') format('woff2'),
+         url('../fonts/web/cuprumitalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/web/ptsans.woff2') format('woff2'),
+         url('../fonts/web/ptsansbold.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ------------------------------------------------ Стили в ШАПКЕ -----------*/
+
+.main-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  background-color: #f4f7f9;
+}
+
+.top-header {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #293449;
+}
+                                          /* --------------- ЛОГО -----------*/
+.logo {
+  background-color: #ee3643;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+
+.logo:focus {
+  background-color: #ba2732;
+}
+                                          /* --------------- ПОИСК -----------*/
+.search_input {
+background-color: #293449;
+border: none;
+}
+
+.search_input:hover {
+background-color: #212a3a;
+}
+
+.search_input:focus {
+color: #000000;
+background-color: #ffffff;
+}
+                                    /* --------------- ШОП Панель -----------*/
+.shop-panel-header a {
+  color: #ffffff;
+}
+
+.shop-panel-item a:hover {
+  background-color: #212a3a;
+}
+
+.shop-panel-item a:focus {
+  color: #8b8e94;
+  background-color: #161d29;
+}
+
+.btn-order {
+  background-color: #63a63e;
+}
+
+.btn-order:hover {
+  background-color: #5fbb2d;
+}
+
+.btn-order:focus {
+  color: #a8c29a;
+  background-color: #518534;
+}
+                              /* ------------- ОСНОВНАЯ НАВИГАЦИЯ -----------*/
+.main-navigation {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.site-navigation a:hover {
+  background-color: #293449;
+}
+
+.site-navigation a:focus {
+  color: #868c95;
+  background-color: #1d2739;
+}
+                            /* ------------- ЗАГОЛОВОК h1 в шапке -----------*/
+.index-h1 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.phone a {
+  color: #e9292a;
+  font-size: 21px;
+  line-height: 21px;
+  border: 3px solid #ffffff;
+}
+
+.adress {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.login ul {
+  list-style: none;
+}
+
+.login a {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+.login a:hover {
+  color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+.login img {
+  fill: #32425c;
+}
+
+.login a:focus {
+  color: #c5c5c5;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+.user-active ul {
+  list-style: none;
+}
+
+.user {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+.user:hover {
+  color: #000000;
+}
+
+.user:focus {
+  color: #c5c5c5;
+  background-color: #ffffff;
+}
+
+.my-orders {
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.my-orders:hover {
+  color: #ee3643;
+}
+
+.my-orders:focus {
+  color: #c5c5c5;
+  background-color: #ffffff;
+}
+
+.private-office {
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.private-office:hover {
+  color: #ee3643;
+}
+
+.private-office:focus {
+  color: #c5c5c5;
+  background-color: #ffffff;
+}
+
+/* ------------------------------------------------ Стили ПРОМО БЛОКА -------*/
+
+.nav-promo ul {
+  list-style: none;
+}
+
+.promo-item {
+  color: #ffffff;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.materials  {
+  background-color: #ffbf47;
+}
+
+.instruments {
+  background-color: #3bbce3;
+}
+
+.technics {
+  background-color: #dc91d8;
+}
+
+.sells {
+  background-color: #8ed78f;
+}
+
+.delivery {
+  background-color: #ffc047;
+}
+
+.btn-promo {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #e5e5e5;
+}
+
+.btn-promo:hover {
+  background-color: #cccccc;
+}
+
+.btn-promo:focus {
+  background-color: #b2b2b2;
+}
+
+/* ------------------------------------------------ Стили СЛАЙДЕРА ----------*/
+
+.slider {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #ffffff;
+  background-color: #cccccc;
+}
+
+.slider h1 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.slider p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.slider a:hover {
+  background-color: #ca2c37;
+}
+
+.slider a:focus {
+  background-color: #ba2732;
+}
+/* ------------------------------------------------ Стили Блока СЕРВИСЫ -----*/
+.slider-services {
+  font-family: "PT Sans", Arial, sans-serif;
+  background-color: #f5f8fa;
+}
+
+.slider-services h1 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.slider-services p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services-nav ul {
+  list-style: none;
+}
+
+.services-nav a {
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.active a {
+  font-size: 21px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.services-main h2 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.services-main p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+/* ------------------------------------------------ Стили секций с инф-ей ---*/
+.about h3 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.contacts h4 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.delivery-partners ul {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.btn-contacts {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+/* ------------------------------------------------ Стили ФУТЕРА ------------*/
+
+footer {
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+.bottom-navigation a {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.bottom-navigation a:hover {
+  text-decoration: underline;
+}
+
+.bottom-navigation a:focus {
+  color: #929caa;
+}
+
+.bottom-navigation ul {
+  list-style: none;
+}
+
+.footer-menu a {
+  color: #ffd180;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu a:focus {
+  color: #998a6e;
+}
+
+.footer-menu ul {
+  list-style: none;
+}
+
+.footer-contacts {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-additionally {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.social a {
+  background-color: #212a3a;
+}
+
+.social a:hover, a:focus {
+  background-color: #ee3643;
+}
+
+.feedback a {
+  color: #f1c77c;
+}
+
+.feedback a:hover {
+  color: #f1c77c;
+  text-decoration: underline;
+}
+
+.feedback a:focus {
+  color: #e13643;
+}
+
+/* ------------------------------------------------ Стили ПОПАПОВ -----------*/
+
+.item-feedback,
+.item-map-big,
+.item-added,
+.visually-hidden {
+  display: none;
+}
+
+/* ------------------------------------------------ Стили КАТАЛОГА ----------*/
+
+.description {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.page-title {
+  background-color: #f2f6f8;
+}
+
+.page-title h1 {
+  font-family: "Cuprum", Arial, sans-serif;;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.breadcrumbs,
+.filters ul {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filter input {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+/* ------------------------------------------------ Стили ТОВАРОВ -----------*/
+
+.catalog {
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.catalog ul {
+  list-style: none;
+}
+
+.cart-item {
+  border: 1px solid;
+}
+
+.cart-item a {
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.old-price {
+  color: #999999;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.catalog-item-price a {
+  color: #fffffff;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  background-color: #ee3643;
+}
+
+.cart-item-hover ul {
+  list-style: none;
+}
+
+.cart-item-hover h3 {
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.btn-buy a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #63a63e;
+  text-transform: uppercase;
+}
+
+.btn-bookmarks a {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  border: 3px solid #63a63e;
+}

@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="main-header">
@@ -40,7 +41,7 @@
                 10
               </span>
             </a>
-            <a class="order" href="#">Оформить заказ</a>
+            <a class="btn-order" href="#">Оформить заказ</a>
         </div>
       </div>
       <!-- конец Верхнего меню -->
@@ -88,7 +89,7 @@
       <!-- конец Информационной части Шапки -->
       <!-- начало главной Навигации -->
       <nav class="main-navigation">
-        <ul>
+        <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -114,10 +115,12 @@
         <span><img src="img/i/icon-right-small.svg" alt="Далее"></span>
         <li class="breadcrumbs-current">перфораторы</li>
       </ul>
-      <h1 class="page-title">перфораторы</h1>
+      <div class="page-title">
+        <h1>перфораторы</h1>
+      </div>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="fitler" action="#" method="get">
+        <form class="filter" action="#" method="get">
           <fieldset>
             <legend>производители:</legend>
             <ul>
@@ -189,6 +192,7 @@
               </p>
             </div>
             <div class="cart-item-hover visually-hidden"> <!-- Ховер скрыт -->
+              <span>new</span>
               <ul>
                 <li>
                   <a class="btn-buy" href="#">
@@ -223,6 +227,7 @@
               </p>
             </div>
             <div class="cart-item-hover visually-hidden"> <!-- Ховер скрыт -->
+              <span>new</span>
               <ul>
                 <li>
                   <a class="btn-buy" href="#">
@@ -258,18 +263,18 @@
             <div class="cart-item-hover"> <!-- Ховер активен -->
               <span>new</span>
               <ul>
-                <li>
-                  <a class="btn-buy" href="#">
+                <li class="btn-buy">
+                  <a href="#">
                     <img src="img/i/icon-cart.svg" alt="Корзина"> купить
                   </a>
                 </li>
-                <li>
-                  <a class="btn-bookmarks" href="#">в закладки</a>
+                <li class="btn-bookmarks">
+                  <a href="#">в закладки</a>
                 </li>
               </ul>
-              <h3>
-                <a href="catalog-item.html">Перфоратор BOSCH BFG 2000</a>
-              </h3>
+              <a href="#" class="">
+                <h3>Перфоратор BOSCH BFG 2000</h3>
+              </a>
               <p class="catalog-item-price">
                 <a class="price-button" href="#">
                   <img src="img/btn/red-button.svg" alt="красная кнопка">12500 Р.
@@ -291,6 +296,7 @@
               </p>
             </div>
             <div class="cart-item-hover visually-hidden"> <!-- Ховер скрыт -->
+              <span>new</span>
               <ul>
                 <li>
                   <a class="btn-buy" href="#">
@@ -361,6 +367,7 @@
               </p>
             </div>
             <div class="cart-item-hover visually-hidden"> <!-- Ховер скрыт -->
+              <span>new</span>
               <ul>
                 <li>
                   <a class="btn-buy" href="#">
@@ -429,6 +436,7 @@
               </p>
             </div>
             <div class="cart-item-hover visually-hidden"> <!-- Ховер скрыт -->
+              <span>new</span>
               <ul>
                 <li>
                   <span><img src="img/i/icon-cart.svg" alt="Корзина"></span>
@@ -461,6 +469,7 @@
               </p>
             </div>
             <div class="cart-item-hover visually-hidden"> <!-- Ховер скрыт -->
+              <span>new</span>
               <ul>
                 <li>
                   <span><img src="img/i/icon-cart.svg" alt="Корзина"></span>
@@ -475,7 +484,7 @@
               </h3>
               <p class="catalog-item-price">
                 <a class="price-button" href="#">
-                  <img src="img/btn/red-button.svg" alt="красная кнопка">12500 Р.
+                  <img src="img/btn/red-button.svg" alt="красная кнопка"> 12500 Р.
                 </a>
               </p>
             </div>
@@ -498,12 +507,12 @@
           </ul>
         </nav>
       </div>
-      <div class="bottom-info">
-        <div class="bottom-contacts">
-          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p class="phone">+7(812)555-05-55</p>
-        </div>
-        <nav class="bottom-menu">
+      <div class="footer-info">
+        <p class="footer-contacts">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          +7(812)555-05-55
+        </p>
+        <nav class="footer-menu">
           <ul>
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
@@ -518,13 +527,13 @@
           Все права защищены
         </div>
         <div class="social">
-          <a href="https://vk.com/" target="_blank"><img src="img/i/icon-vk.svg" alt="Вконтакте"></a>
-          <a href="https://www.facebook.com/" target="_blank"><img src="img/i/icon-fb.svg" alt="Фейсбук"></a>
-          <a href="https://www.instagram.com/" target="_blank"><img src="img/i/icon-insta.svg" alt="Инстаграм"></a>
+          <a href="https://vk.com/" class="social-btn-vk"><img src="img/i/icon-vk.svg" alt="Вконтакте"></a>
+          <a href="https://www.facebook.com/" class="social-btn-fb"><img src="img/i/icon-fb.svg" alt="Фейсбук"></a>
+          <a href="https://www.instagram.com/" class="social-btn-insta"><img src="img/i/icon-insta.svg" alt="Инстаграм"></a>
         </div>
         <div class="feedback">
           <p>Обратная связь:<br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-          <p>Разработано:<br><a href="https://htmlacademy.ru" target="_blank">htmlacademy.ru</a></p>
+          <p>Разработано:<br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
         </div>
       </div>
       <!-- Модальное окно Добавления товара -->
