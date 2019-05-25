@@ -11,15 +11,15 @@
       <!-- начало Верхнего меню -->
       <div class="top-header">
         <div class="logo">
-          <a href="index.html"><img src="img/i/logo-technomart.svg" alt="Логотип Техномарта"></a>
+          <a href><img src="img/i/logo-technomart.svg" alt="Логотип Техномарта"></a>
         </div>
         <div class="shop-panel-header">
           <div class="search">
-            <form class="search-form" action="#" method="get">
+            <form action="#" class="search-form" method="get">
               <label class="search_label">
                 <span class="search_icon" aria-label="Search"><img src="img/i/icon-search.svg" alt="Поиск"></span>
                 Поиск:
-                <input class="search_input" type="search" name="search" placeholder="Перфоратор">
+                <input class="search_input" type="search" name="search">
               </label>
             </form>
           </div>
@@ -39,7 +39,7 @@
       <!-- конец Верхнего меню -->
       <!-- начало Информационной части Шапки -->
       <div class="header-info">
-        <h1 class="index-h1">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
+        <p class="description">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
         <div class="header-contacts">
           <p class="phone">
             <span>
@@ -94,11 +94,10 @@
       <!-- конец главной Навигации -->
     </header>
     <main class="container">
+      <h1 class="visually-hidden">Главная страница</h1>
       <!--начало Секции Промо-блока -->
       <section class="promo">
-        <h2 class="visually-hidden">
-          Промо-блок
-        </h2>
+        <h2 class="visually-hidden">Промо-блок</h2>
         <nav class="nav-promo">
           <ul>
             <li>
@@ -143,47 +142,41 @@
         <article class="slider">
           <div class="slider-item">
             <img src="img/slider/drills.jpg" width="620" height="266" alt="Дрели">
-            <h1 class="slider-h1">
-              дрели
-            </h1>
-            <p>
-              Соседям на радость!
-            </p>
+            <h3>дрели</h3>
+            <p>Соседям на радость!</p>
             <a class="button-slider" href="#">открыть каталог</a>
           </div>
           <div class="slider-item visually-hidden">
             <img src="img/slider/perforators.jpg" width="620" height="266" alt="Перфораторы">
-            <h1 class="slider-h1">перфораторы</h1>
+            <h3>перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
             <a class="btn-slider" href="#">открыть каталог</a>
-            <button class="btn-dot-active"><img src="img/btn/slider-dots-active.svg" alt="Переключатель (активен)"></button>
-            <button class="btn-dot"><img src="img/btn/slider-dots.svg" alt="Переключатель"></button>
           </div>
-          <ul class="slides-switches">
-            <li class="slides-radio">
-              <button class="btn-slide">Первый слайд</button>
-            </li>
-            <li class="slides-radio">
-              <button class="btn-slide">Второй слайд</button>
-            </li>
-          </ul>
+          <div class="slider-petals">
+            <button class="btn-petals-left">Назад</button>
+            <button class="btn-pelals-right">Вперед</button>
+          </div>
+          <div class="slides-switches">
+            <button class="btn-slide" type="radio"></button>
+            <button class="btn-slide" type="radio"></button>
+          </div>
         </article>
         <!-- конец Слайдера -->
       </section>
       <!--конец Секции Промо-блока -->
       <!--начало Секции Популярные Товары -->
       <section class="popular-products">
-        <h3>популярные товары</h3>
+        <h2>популярные товары</h2>
       </section>
       <!--конец Секции Популярные Товары -->
       <!--начало Секции Популярные Производители -->
       <section class="popular-manufacturers">
-        <h3>популярные производители</h3>
+        <h2>популярные производители</h2>
       </section>
       <!--конец Секции Популярные Производители -->
       <!--начало Секции Сервисы -->
       <article class="slider-services">
-        <h1>сервисы</h1>
+        <h2>сервисы</h2>
         <p>
           Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
@@ -196,7 +189,7 @@
           </ul>
         </nav>
         <div class="services-main">
-          <h2>доставка</h2>
+          <h3>доставка</h3>
           <p>
             Мы с удовольствие доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно!<br>
@@ -206,7 +199,7 @@
           <img src="img/delivery.png" alt="Доставка">
         </div>
         <div class="services-main">
-          <h2>гарантия</h2>
+          <h3>гарантия</h3>
           <p>
             Если купленный у нас товар поломается или заискрит,<br>
             а также в случае пожара, спровоцированного его возгоранием,<br>
@@ -217,7 +210,7 @@
           <img src="img/garant.png" alt="Гарантия">
         </div>
         <div class="services-main">
-          <h2>кредит</h2>
+          <h3>кредит</h3>
           <p>
             Залезть в долговую яму стало проще!<br>
             Кредитные консультанты придут вам на помощь.
@@ -228,7 +221,7 @@
       <!--конец Секции Сервисы -->
       <!--начало Секции О Компании -->
       <section class="about">
-        <h3>компания «техномарт»</h3>
+        <h2>компания «техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
         <ul class="delivery-partners">
@@ -241,7 +234,7 @@
       <!--конец Секции О Компании -->
       <!--начало Секции Контакты -->
       <section class="contacts">
-        <h4>контакты</h4>
+        <h2>контакты</h2>
         <p>Вы можете забрать товар сами,<br>
            заехав в наш офис:
         </p>

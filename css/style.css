@@ -1,20 +1,47 @@
 @font-face {
-    font-family: 'Cuprum';
-    src: url('../fonts/web/cuprum.woff2') format('woff2'),
-         url('../fonts/web/cuprumbold.woff2') format('woff2'),
-         url('../fonts/web/cuprumitalic.woff2') format('woff2');
+  font-family: 'Cuprum';
+  src: url('../fonts/web/cuprum.woff2') format('woff2'),
+  url('../fonts/web/cuprum.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: 'PT Sans';
-    src: url('../fonts/web/ptsans.woff2') format('woff2'),
-         url('../fonts/web/ptsansbold.woff2') format('woff2');
+  font-family: 'Cuprum';
+  src: url('../fonts/web/cuprumbold.woff2') format('woff2'),
+  url('../fonts/web/cuprumbold.woff') format('woff');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: url('../fonts/web/cuprumitalic.woff2') format('woff2'),
+  url('../fonts/web/cuprumitalic.woff') format('woff');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/web/ptsans.woff2') format('woff2'),
+  url('../fonts/web/ptsans.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/web/ptsansbold.woff2') format('woff2'),
+  url('../fonts/web/ptsansbold.woff') format('woff');
+  font-style: normal;
+  font-weight: bold;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
@@ -114,14 +141,6 @@ background-color: #ffffff;
 .site-navigation a:focus {
   color: #868c95;
   background-color: #1d2739;
-}
-                            /* ------------- ЗАГОЛОВОК h1 в шапке -----------*/
-.index-h1 {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 23px;
-  color: #ee3643;
 }
 
 .phone a {
@@ -276,7 +295,7 @@ background-color: #ffffff;
   background-color: #cccccc;
 }
 
-.slider h1 {
+.slider h3 {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
@@ -303,15 +322,22 @@ background-color: #ffffff;
 .slider a:focus {
   background-color: #ba2732;
 }
+
+.slider-petals {
+
+}
+
+
 /* ------------------------------------------------ Стили Блока СЕРВИСЫ -----*/
 .slider-services {
   font-family: "PT Sans", Arial, sans-serif;
   background-color: #f5f8fa;
 }
 
-.slider-services h1 {
+.slider-services h2 {
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
@@ -338,11 +364,12 @@ background-color: #ffffff;
   background-color: #ffffff;
 }
 
-.services-main h2 {
-    font-size: 36px;
-    line-height: 36px;
-    color: #32425c;
-    text-transform: uppercase;
+.services-main h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  color: #32425c;
+  text-transform: uppercase;
 }
 
 .services-main p {
@@ -351,9 +378,11 @@ background-color: #ffffff;
 }
 
 /* ------------------------------------------------ Стили секций с инф-ей ---*/
-.about h3 {
+.about h2 {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
@@ -362,7 +391,7 @@ background-color: #ffffff;
   line-height: 24px;
 }
 
-.contacts h4 {
+.contacts h2 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -446,7 +475,8 @@ footer {
   background-color: #212a3a;
 }
 
-.social a:hover, a:focus {
+.social a:hover,
+.social a:focus {
   background-color: #ee3643;
 }
 
@@ -508,13 +538,9 @@ footer {
 
 .filter {
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  text-transform: uppercase;
 }
 
 .filter legend {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
@@ -522,7 +548,6 @@ footer {
 }
 
 .filter input {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -530,6 +555,18 @@ footer {
 
 .filter fieldset {
   border: none;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter-input {
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
 }
 
 /* ------------------------------------------------ Стили ТОВАРОВ -----------*/
@@ -546,7 +583,7 @@ footer {
   border: 1px solid;
 }
 
-.cart-item a {
+.cart-item-head {
   color: #000000;
   font-size: 18px;
   line-height: 20px;
@@ -560,8 +597,8 @@ footer {
   font-weight: bold;
 }
 
-.catalog-item-price a {
-  color: #fffffff;
+.price-button {
+  color: #ffffff;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -579,7 +616,7 @@ footer {
   font-weight: bold;
 }
 
-.btn-buy a {
+.btn-buy {
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
@@ -587,7 +624,7 @@ footer {
   text-transform: uppercase;
 }
 
-.btn-bookmarks a {
+.btn-bookmarks {
   color: #32425c;
   font-size: 14px;
   line-height: 18px;
