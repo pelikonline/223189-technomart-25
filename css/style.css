@@ -536,9 +536,16 @@ a {
 }
 
 .popular-brands li {
+  margin-top: 20px;
   width: 220px;
+  height: 145px;
   border: 1px solid #eaeaea;
 }
+
+.popular-brands img {
+  align-content: center;
+}
+
 /* ------------------------------------------------ Стили Блока СЕРВИСЫ -----*/
 .services {
   margin-bottom: 82px;
@@ -569,22 +576,32 @@ a {
   line-height: 24px;
 }
 
-.services-list {
+.services-page {
   width: 940px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border: 1px solid blue;
 }
 
-.services-nav ul {
+.services-nav {
+  margin: 0;
+  padding: 0;
+  width: 240px;
   list-style: none;
+  border: 2px dashed hotpink;
+}
+
+.services-nav li {
+  width: 240px;
+  height: 60px;
+  background-color: #32425c;
 }
 
 .services-nav a {
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
-  background-color: #32425c;
 }
 
 .active a {
@@ -592,6 +609,12 @@ a {
   line-height: 30px;
   color: #32425c;
   background-color: #ffffff;
+}
+
+.services-main {
+  margin-left: 80px;
+  list-style: none;
+  border: 2px dashed orange;
 }
 
 .services-main h3 {
@@ -606,8 +629,14 @@ a {
   font-size: 13px;
   line-height: 24px;
 }
+/* ------------------------------------------------------------------------------------Стили секции О КОМПАНИИ--------*/
+.about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 940px;
+}
 
-/* ------------------------------------------------ Стили секций с инф-ей ---*/
 .about h2 {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -621,6 +650,20 @@ a {
   line-height: 24px;
 }
 
+
+.delivery-partners ul {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.company {
+  width: 518px;
+}
+
+.contacts {
+  width: 300px;
+}
+
 .contacts h2 {
   font-size: 30px;
   line-height: 30px;
@@ -630,29 +673,22 @@ a {
 .contacts p {
   font-size: 13px;
   line-height: 24px;
-  font-weight: bold;
-}
-
-.delivery-partners ul {
-  font-size: 18px;
-  line-height: 20px;
 }
 
 .btn-contacts {
+  width: 300px;
+  margin: 0;
+  padding: 0;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   background-color: #ee3643;
 }
-/* --------------------------------------------Стили блока О КОМПАНИИ--------*/
-.about{
-  display: flex;
-  flex-direction: row;
-  width: 940px;
-}
-/* ------------------------------------------------ Стили ФУТЕРА ------------*/
+
+/* ----------------------------------------------------------------------------------------- FOOTER ------------------*/
 .footer-main {
+  font-family: "Cuprum", Arial, sans-serif;
   margin-top: 85px;
   background-color: #32425c;
   color: #ffffff;
@@ -747,6 +783,14 @@ a {
   color: #ffffff;
   background-color: #293449;
   justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .social a {
@@ -759,6 +803,8 @@ a {
 }
 
 .feedback {
+  margin: 0;
+  padding: 0;
   justify-content: space-between;
   display: flex;
   flex-direction: row;
