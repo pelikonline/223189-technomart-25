@@ -65,7 +65,7 @@ a {
 .top-header {
   font-size: 17px;
   line-height: 18px;
-  width: 940px;
+  width: 100%;
   min-height: 42px;
   display: flex;
   flex-direction: row;
@@ -75,6 +75,15 @@ a {
   background-color: #293449;
   margin-bottom: 46px;
 }
+
+.top-header-wrap {
+  width: 940px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 /* --------------- div LOGO ---------------------------*/
 .logo {
   width: 220px;
@@ -82,7 +91,8 @@ a {
   margin-right: 10px;
   background-color: #ee3643;
   text-align: center;
-  vertical-align: center;  /* !!!!!!!! Не работает вертикальное выравнивание :( !!!!!!!!!!!!!!!!!!!!!*/
+  justify-content: center;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
 .logo a {
@@ -187,13 +197,22 @@ a {
 .phone {
   margin: 0;
   padding: 0;
+  width: 270px;
+  height: 33px;
+  border: 3px solid #ffffff;
+}
+
+.phone img {
+  margin: 0;
+  padding: 0po;
 }
 
 .phone a {
+  margin: 0;
+  padding: 0;
   color: #e9292a;
   font-size: 21px;
   line-height: 21px;
-  border: 3px solid #ffffff;
 }
 
 .adress {
@@ -345,7 +364,6 @@ a {
   width: 940px;
   min-height: 410px;
   margin-bottom: 53px;
-  border: 1px solid red; /* временно для сеток */
 }
 
 .promo-list {
@@ -356,6 +374,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
 }
 
 .promo-item {
@@ -365,6 +384,19 @@ a {
   font-family: "Cuprum", Arial, sans-serif;
   width: 300px;
   height: 123px;
+  position: relative;
+}
+
+.promo-item:nth-of-type(5) {
+  position: absolute;
+  top: 146px;
+  right: 0;
+}
+
+.promo-item:nth-of-type(6) {
+  position: absolute;
+  top: 288px;
+  right: 0;
 }
 
 .promo-item h3 {
@@ -393,22 +425,37 @@ a {
 
 .materials  {
   background-color: #ffbf47;
+  background-image: url("../img/promo/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 80% 50%;
 }
 
 .instruments {
   background-color: #3bbce3;
+  background-image: url("../img/promo/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 80% 50%;
 }
 
 .technics {
   background-color: #dc91d8;
+  background-image: url("../img/promo/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 80% 50%;
 }
 
 .sells {
   background-color: #8ed78f;
+  background-image: url("../img/promo/icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: 80% 50%;
 }
 
 .delivery {
   background-color: #ffc047;
+  background-image: url("../img/promo/icon-5.svg");
+  background-repeat: no-repeat;
+  background-position: 80% 50%;
 }
 /* ------------------------------------------------ Стили СЛАЙДЕРА ----------*/
 
@@ -417,7 +464,9 @@ a {
   padding: 0;
   width: 620px;
   height: 266px;
-  background-color: #cccccc; /* временный цвет для сетки */
+  position: absolute;
+  top: 145px;
+  left: 0;
 }
 .slider {
   margin: 0;
@@ -429,18 +478,17 @@ a {
   color: #ffffff;
 }
 
-/*
 .slider-item img {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
 }
-*/
 
 .slider-item h3 {
   margin: 0;
-  padding: 0;
+  padding-top: 27px;
+  padding-left: 24px;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
@@ -448,11 +496,13 @@ a {
 }
 
 .slider-item p {
+  padding-left: 24px;
   font-size: 18px;
   line-height: 24px;
 }
 
 .slider a {
+  padding: 14px 45px 14px 49px;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
@@ -492,9 +542,6 @@ a {
 }
 
 .btn-popular {
-  margin: 0;
-  padding: 0;
-  width: 235px;
   height: 38px;
   color: #ffffff;
   background-color: #ee3643;
@@ -502,6 +549,7 @@ a {
 }
 
 .btn-popular a {
+  padding: 14px 55px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -540,6 +588,9 @@ a {
   width: 220px;
   height: 145px;
   border: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .popular-brands img {
@@ -551,10 +602,18 @@ a {
   margin-bottom: 82px;
   font-family: "PT Sans", Arial, sans-serif;
   background-color: #f4f8fa;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: darkred 3px dashed;
+}
+
+.services-wrap {
+  width: 940px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .services-top {
@@ -778,10 +837,17 @@ a {
 }
 
 .footer-additionally {
+  width: 100%;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   background-color: #293449;
+}
+
+.footer-additionally-wrap {
+  width: 940px;
+  margin: auto;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -939,8 +1005,15 @@ a {
 }
 
 .cart-item {
+  margin-bottom: 20px;
+  padding: 0;
   width: 218px;
+  height: 318px;
   border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart-item-head {

@@ -8,12 +8,11 @@
   </head>
   <body>
     <header class="main-header">
-      <!-- начало Верхнего меню -->
       <div class="top-header">
-        <div class="logo">
-          <a href="index.html"><img src="img/i/logo-technomart.svg" alt="Логотип Техномарта"></a>
-        </div>
-        <div class="shop-panel">
+        <div class="top-header-wrap">
+          <div class="logo">
+            <a href="index.html"><img src="img/i/logo-technomart.svg" alt="Логотип Техномарта"></a>
+          </div>
           <div class="search">
             <form class="search-form" action="#" method="get">
               <label class="search_label">
@@ -23,6 +22,7 @@
               </label>
             </form>
           </div>
+          <div class="shop-panel">
             <a class="shop-panel-item" href="#">
               <span>
                 <img src="img/i/icon-bookmark.svg" alt="Закладки">
@@ -42,6 +42,7 @@
               </span>
             </a>
             <a class="btn-order" href="#">Оформить заказ</a>
+          </div>
         </div>
       </div>
       <!-- конец Верхнего меню -->
@@ -151,9 +152,7 @@
                 <li class="filter-option">
                   <label class="filter-label">
                     <input type="radio" name="аккумуляторные" checked> аккумуляторные
-                  </lable>
-                </li>
-                <li class="filter-option">
+                  </label>
                   <label class="filter-label">
                     <input type="radio" name="сетевые"> сетевые
                   </label>
@@ -194,8 +193,8 @@
             </div>
           </li>
           <li class="catalog-item">  <!-- Товар 3 -->
-            <span>new</span>
             <div class="cart-item">
+              <span>new</span>
               <a class="cart-item-head visually-hidden" href="#" >
                 <img src="img/cart_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                 <h3>Перфоратор BOSCH BFG 2000</h3>
@@ -323,18 +322,20 @@
         </ul>
       </div>
       <div class="footer-additionally">
-        <div class="copyright">
-          &copy; 2010-2016 Компания «Техномарт»<br>
-          Все права защищены
-        </div>
-        <div class="social">
-          <a href="https://vk.com/" class="social-btn-vk"><img src="img/i/icon-vk.svg" alt="Вконтакте"></a>
-          <a href="https://www.facebook.com/" class="social-btn-fb"><img src="img/i/icon-fb.svg" alt="Фейсбук"></a>
-          <a href="https://www.instagram.com/" class="social-btn-insta"><img src="img/i/icon-insta.svg" alt="Инстаграм"></a>
-        </div>
-        <div class="feedback">
-          <p>Обратная связь:<br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-          <p>Разработано —<br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+        <div class="footer-additionally-wrap">
+          <div class="copyright">
+            &copy; 2010-2016 Компания «Техномарт»<br>
+            Все права защищены
+          </div>
+          <div class="social">
+            <a href="https://vk.com/" class="social-btn-vk"><img src="img/i/icon-vk.svg" alt="Вконтакте"></a>
+            <a href="https://www.facebook.com/" class="social-btn-fb"><img src="img/i/icon-fb.svg" alt="Фейсбук"></a>
+            <a href="https://www.instagram.com/" class="social-btn-insta"><img src="img/i/icon-insta.svg" alt="Инстаграм"></a>
+          </div>
+          <div class="feedback">
+            <p>Обратная связь:<br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            <p>Разработано —<br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+          </div>
         </div>
       </div>
       <!-- Модальное окно Добавления товара -->
