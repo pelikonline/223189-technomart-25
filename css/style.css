@@ -52,11 +52,21 @@ a {
 }
 /* ------------------------------------------------------------------------------------------------ HEADER -----------*/
 .main-header {
-  margin: 0;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
   background-color: #f4f7f9;
   margin-bottom: 59px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+
+.catalog-header {
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  background-color: #f4f7f9;
+  margin-bottom: 23px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,17 +169,11 @@ a {
 }
 
 .shop-panel-item {
-  width: 150px;
   height: 42px;
-  text-align: center;
   justify-content: center;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-}
-
-.active-cart {
-  background-color: #ee3643;
 }
 
 .shop-panel-item:hover {
@@ -182,8 +186,12 @@ a {
 
                                             /* ---- BOOKMARK ----*/
 .item-bookmark {
-  margin: auto 0 auto 13px;
-  padding: 0;
+  display: block;
+  width: 150px;
+  text-align: center;
+
+  margin: 0;
+  padding: 12px 0;
   color: #ffffff;
 }
 
@@ -208,9 +216,20 @@ a {
 }
                                                /* ---- CART ----*/
 .item-cart {
-  margin: auto 0 auto 13px;
-  padding: 0;
+  display: block;
+  width: 150px;
+  margin: 0;
+  padding: 12px 0;
+
+  text-align: center;
   color: #ffffff;
+}
+
+.active-cart {
+  width: 150px;
+  padding: 12px 0;
+
+  background-color: #ee3643;
 }
 
 .item-cart::before {
@@ -236,10 +255,16 @@ a {
 }
                                                 /* ---- ORDER BUTTON ----*/
 .btn-order {
+  display: block;
+  width: 150px;
+
   margin: 0;
+  padding: 12px 0;
+
   font-size: 17px;
   line-height: 18px;
-  padding: 13px 22px 12px 20px;
+  text-align: center;
+
   color: #ffffff;
   background-color: #63a63e;
   border: none;
@@ -427,8 +452,6 @@ a {
   background-color: #32425c;
   border-radius: 50%;
 }
-
-
 /* ------------------------------------ NAVIGATION HEADER -------------------------------*/
 .main-navigation {
   margin-bottom: 60px;
@@ -439,42 +462,52 @@ a {
   width: 940px;
 }
 
-.site-navigation {
+.main-navigation ul {
   margin: 0;
-  padding-left: 21px;
-  padding-right: 25px;
-  list-style: none;
+  padding: 0;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  list-style: none;
   background-color: #32425c;
-  height: 55px;
+  min-height: 55px;
   border-bottom: 5px solid #293449;
 }
 
-.site-navigation li {
-  text-align: center;
-}
+.element-navigation {
+  display: block;
 
-.site-navigation a {
   color: #ffffff;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 17px;
-  padding: 17px 25px 19px;
+  text-align: center;
+
+  margin: 0;
+  padding: 19px 0;
 }
 
-.site-navigation a:hover {
+.element-navigation:hover {
   background-color: #293449;
 }
 
-.site-navigation a:focus {
+.element-navigation:focus {
   color: #868c95;
   background-color: #1d2739;
 }
-/* ----------------------------------------------------------------------------------- Стили MAIN контейнера -------*/
+
+.element-navigation:first-child {
+  padding-left: 25px;  /*применяю значения по макету - появляется вторая строка*/
+}
+
+.element-navigation:last-of-type {
+  padding-right: 25px;  /*применяю значения по макету - появляется вторая строка*/
+}
+/*----------------------------------------------------------------------------------- Стили MAIN контейнера -------*/
 .container {
   margin-bottom: 86px;
   padding: 0;
@@ -522,33 +555,35 @@ a {
 }
 
 .promo-item h3 {
-  margin-left: 23px;
+  margin-left: 23px;de
+  margin-bottom: 15px;
+  padding: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
 }
 
 .btn-promo {
-  margin-left: 25px;
-  margin-bottom: 15px;
-  padding: 10px 24px;
+  display: block;
+  width: 135px;
+  margin-left: 19px;
+  padding: 10px;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-  background-color: #e5e5e5;
+  background-color: rgba(229, 229, 229, 0.3);
   border: none;
-  width: 136px;
   border-radius: 5px;
 }
 
 .btn-promo:hover {
-  background-color: #cccccc;
+  background-color: rgba(204, 204, 204, 1.0);
 }
 
 .btn-promo:focus {
-  background-color: #b2b2b2;
+  background-color: rgba(178, 178, 178, 1.0);
 }
 
 .materials  {
@@ -617,6 +652,7 @@ a {
   margin: 0;
   padding-top: 27px;
   padding-left: 24px;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
@@ -629,25 +665,32 @@ a {
   line-height: 24px;
 }
 
-.slider a {
-  padding: 14px 45px 14px 49px;
+.btn-slider {
+  display: block;
+  width: 195px;
+  padding: 10px 0;
+  margin-left: 25px;
+
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
+
+  border-radius: 5px;
   background-color: #ee3643;
 }
 
-.slider a:hover {
+.btn-slider:hover {
   background-color: #ca2c37;
 }
 
-.slider a:focus {
+.btn-slider:focus {
   background-color: #ba2732;
 }
                                     /* ------------------------------------------------ section POPULAR PRODUCTS -----*/
 .popular-products {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .popular-products-header {
@@ -672,29 +715,6 @@ a {
   text-transform: uppercase;
 }
 
-.popular-products-header a {
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-
-  width: 253px;
-  padding: 10px 0;
-  margin-right: 24px;
-
-  border-radius: 5px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #ee3643;
-}
-
-.popular-products-header a:hover {
-  background-color: #ca2c37;
-}
-
-.popular-products-header a:focus {
-  background-color: #ba2732;
-}
-
 .popular-list {
   margin: 0;
   padding: 0;
@@ -708,13 +728,40 @@ a {
   width: 220px;
   height: 318px;
 }
+
+/* ------------------------------------------------ Кнопка популярно -----*/
+
+.btn-popular {
+  display: block;
+  width: 253px;
+  padding: 10px 0;
+  margin-right: 24px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.btn-popular:hover {
+  background-color: #ca2c37;
+}
+
+.btn-popular:focus {
+  background-color: #ba2732;
+}
+
                                 /* ------------------------------------------------ section POPULAR MANUFACTURES -----*/
 .popular-manufacturers {
   margin-bottom: 65px;
 }
 
 .popular-manufacturers-header {
-  margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   width: 940px;
   height: 90px;
@@ -734,29 +781,6 @@ a {
   text-transform: uppercase;
 }
 
-.popular-manufacturers-header a {
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-
-  width: 253px;
-  padding: 10px 0;
-  margin-right: 24px;
-
-  border-radius: 5px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #ee3643;
-}
-
-.popular-manufacturers-header a:hover {
-  background-color: #ca2c37;
-}
-
-.popular-manufacturers-header a:focus {
-  background-color: #ba2732;
-}
-
 .popular-brands {
   margin: 0;
   padding: 0;
@@ -769,7 +793,7 @@ a {
 }
 
 .popular-brands li {
-  margin-top: 20px;
+  margin-bottom: 20px;
   width: 218px;
   height: 143px;
   border: 1px solid #eaeaea;
@@ -841,23 +865,27 @@ a {
   list-style: none;
 }
 
-.services-nav li {
+.element-service-nav {
+  display: block;
   width: 240px;
-  height: 60px;
-  background-color: #32425c;
-}
+  padding: 16px 0 16px 23px;
 
-.services-nav a {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
+  font-weight: bold;
   color: #ffffff;
+
+  background-color: #32425c;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
 }
 
-.active a {
-  font-size: 21px;
-  line-height: 30px;
+
+.active-service  {
   color: #32425c;
   background-color: #ffffff;
+  border: none;
 }
 
 .services-main {
@@ -875,8 +903,10 @@ a {
   font-weight: normal;
   color: #32425c;
   text-transform: uppercase;
+
   margin-left: 87px;
   margin-top: 0;
+  margin-bottom: 26px;
 }
 
 .services-main p {
@@ -890,6 +920,23 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.btn-credit-order {
+  display: block;
+  width: 195px;
+  padding: 10px 0;
+  margin-left: 87px;
+  margin-top: 31px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #ff5357;
 }
 /* ------------------------------------------------------------------------------------Стили секции О КОМПАНИИ--------*/
 .about{
@@ -922,30 +969,38 @@ a {
   margin-top: 28px;
 }
 
-.about ul {
+
+.delivery-partners {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 0;
   list-style: none;
   margin-bottom: 37px;
 }
 
-.delivery-partners ul {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-}
-
 .delivery-partners li {
   margin-bottom: 20px;
-
+  padding-left: 36px;
   position: relative;
 }
-.delivery-partners li:last-of-type {
-  margin-bottom: 0;
+
+.delivery-partners li::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  background-position: 0 0;
+  top: 7px;
+  left: 0;
 }
 
 .btn-company {
+  display: block;
   width: 220px;
   margin: 0;
-  padding: 10px 40px 10px 41px;
+  padding: 10px 0;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
@@ -990,9 +1045,10 @@ a {
 }
 
 .btn-contacts {
+  display: block;
   width: 300px;
   margin: 0;
-  padding: 10px 59px 10px 64px;
+  padding: 10px 0;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
@@ -1253,13 +1309,12 @@ a {
 }
 
 .breadcrumbs {
-  margin-top: -44px;
+  margin-top: 0;
   margin-bottom: 21px;
   padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 358px;
   list-style: none;
 }
 
@@ -1298,7 +1353,6 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
 
 .page-title {
   width: 940px;
@@ -1351,8 +1405,7 @@ a {
 }
 
 .filter-label {
-  padding-left: 34px;
-  position: relative;
+  padding-left: 0;
 }
 
 .filter input {
@@ -1375,6 +1428,21 @@ a {
   text-transform: uppercase;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
+}
+
+.icon-check-square {
+  width: 23px;
+  height: 23px;
+  border: 2px solid #c5c5c5;
+  border-radius: 3px;
+}
+
+.checkbox-square {
+
+}
+
+.input-check-square + icon-check-square {
+  display: block;
 }
 
 /* ---------------NEW UL CARTS--------------------- */
@@ -1433,7 +1501,7 @@ a {
   height: 88px;
   padding: 40px 0;
 
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,1.0);
   z-index: 10;
 }
 
@@ -1564,32 +1632,151 @@ a {
 }
 /* ------------------------------------------------ Стили ПОПАПОВ -----------*/
 
-.item-feedback,
 .item-map-big,
 .visually-hidden {
   display: none;
 }
 
-/*----------- Попап ТОВАР добавлен в корзину ------------*/
+/*------------------------ Попап Обратная связь ----------------------------*/
+.item-feedback {
+  font-family: "Cuprum", Arial, sans-serif;
+  position: absolute;
+
+  top: 411px;
+  left: 50%;
+  margin-left: -310px;
+
+  width: 620px;
+  height: 431px;
+
+  border-top: 7px solid #ee3643;
+  box-shadow: 0 15px 32px 0 #ccc;
+  z-index: 500;
+}
+
+.header-form-feedback {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 48px 80px 37px;
+  background-color: #ffffff;
+}
+
+.footer-form-feedback {
+  padding: 45px 80px 49px;
+  background-color: #f1f1f1;
+}
+
+.btn-feedback {
+  display: block;
+  margin: 0;
+  width: 460px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-form-label {
+  margin-bottom: 22px;
+}
+
+.form-label-text {
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.form-label-input {
+  display: block;
+  width: 186px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  padding: 7px 15px;
+
+  font-family: "PT Sans",Arial,sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.commit-input {
+  width: 428px;
+  height: 87px;
+}
+/*------------------------ Попап ТОВАР добавлен в корзину ----------------------------*/
 .item-added {
   font-family: "Cuprum", Arial, sans-serif;
   position: absolute;
   top: 411px;
-  left: 30%;
+  left: 50%;
+  margin-left: -310px;
   width: 620px;
   height: 282px;
 
   display: flex;
   flex-direction: column;
   border-top: 7px solid #ee3643;
+
+  box-shadow: 0 15px 32px 0 #ccc;
+  z-index: 500;
 }
 
 .header-item-added {
-  position: relative;
-  padding: 0;
+  display: flex;
+  padding: 45px 80px 49px;
   background-color: #ffffff;
+}
 
-  height: 163px;
+.footer-item-added {
+  display: flex;
+  margin: 0;
+  padding: 38px 80px;
+  justify-content: center;
+  background-color: #f1f1f1;
+}
+
+.icon-item-added {
+  position: relative;
+  margin: 0 30px 0 0;
+  width: 67px;
+  height: 67px;
+  background-color: #63a63e;
+  border-radius: 50%;
+}
+
+.icon-item-added::before {
+  content: "";
+  position: absolute;
+
+  top: 18px;
+  left: 14px;
+  width: 32px;
+  height: 15px;
+
+  border: 8px solid #fff;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+}
+
+.item-added h4 {
+  margin: 0;
+  padding: 0;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 200;
+  color: #000000;
+
+  align-self: center;
 }
 
 .btn-item-added {
@@ -1608,64 +1795,27 @@ a {
   right: 9px;
 }
 
-.item-added h4 {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 200;
-  color: #000000;
-
-  margin-top: 68px;
-  margin-left: 179px;
-}
-
-.header-item-added::before {
-  position: absolute;
-
-  content: "";
-  background-color: #ffffff;
-  background-image: url("../img/i/icon-mark.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  width: 66px;
-  height: 66px;
-  top: 48px;
-  left: 80px;
-
-}
-
-.footer-item-added {
-  margin: 0;
-  padding: 0;
-  height: 112px;
-  background-color: #f1f1f1;
-}
-
-.footer-item-added ul {
-  list-style: none;
-  margin-top: 37px;
-  margin-left: 60px;
-  display: flex;
-}
-
-.footer-item-added li a {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
 
 .btn-modal-checkout {
+  display: block;
   margin-right: 20px;
+  width: 220px;
+
   background-color: #ee3643;
   color: #ffffff;
-  padding: 12px 62px 12px 59px;
+  text-align: center;
+  padding: 12px 0;
   border-radius: 5px;
 }
 
 .btn-modal-continue {
+  display: block;
   margin: 0;
+  width: 220px;
+
   background-color: #ffffff;
   color: #000000;
-  padding: 12px 48px 12px 44px;
+  text-align: center;
+  padding: 12px 0;
   border-radius: 5px;
 }

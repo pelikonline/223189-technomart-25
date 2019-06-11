@@ -14,8 +14,8 @@
           <form class="search-form" action="#" method="get">
             <label>
               <span class="visually-hidden">Поиск</span>
+              <input type="search" name="search" id="search" placeholder="Поиск:">
             </label>
-            <input type="search" name="search" id="search" placeholder="Поиск:">
           </form>
           <ul class="shop-panel">
             <li class="shop-panel-item">
@@ -60,14 +60,14 @@
       </section>
       <nav class="main-navigation">
         <div class="nav-wrap">
-          <ul class="site-navigation">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
+          <ul>
+            <li><a class="element-navigation" href="#">Главная</a></li>
+            <li><a class="element-navigation" href="#">Компания</a></li>
+            <li><a class="element-navigation" href="catalog.html">Каталог</a></li>
+            <li><a class="element-navigation" href="#">Новости</a></li>
+            <li><a class="element-navigation" href="#">Спецпредложения</a></li>
+            <li><a class="element-navigation" href="#">Доставка</a></li>
+            <li><a class="element-navigation" href="#">Контакты</a></li>
           </ul>
         </div>
       </nav>
@@ -99,16 +99,16 @@
           </li>
           <li class="promo-slider">
             <ul class="slider">
-              <li class="slider-item">
+              <li class="slider-item visually-hidden">
                 <h3>дрели</h3>
                 <p>Соседям на радость!</p>
-                <a class="button-slider" href="catalog.html">открыть каталог</a>
+                <a class="btn-slider" href="catalog.html">открыть каталог</a>
                 <img src="img/slider/drills.jpg" width="620" height="266" alt="Дрели">
               </li>
-              <li class="slider-item visually-hidden">
+              <li class="slider-item">
                 <h3>перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
-                <a class="button-slider" href="catalog.html">открыть каталог</a>
+                <a class="btn-slider" href="catalog.html">открыть каталог</a>
                 <img src="img/slider/perforators.jpg" width="620" height="266" alt="Перфораторы">
               </li>
               <li>
@@ -126,7 +126,7 @@
       <section class="popular-products">            <!--начало Секции Популярные Товары -->
         <div class="popular-products-header">
           <h2>популярные товары</h2>
-          <a href>все популярные товары</a>
+          <a class="btn-popular" href>все популярные товары</a>
         </div>
         <ul class="popular-list">
           <li class="catalog-item"> <!-- Товар 1 -->
@@ -202,17 +202,11 @@
           </div>
           <div class="services-page">
             <ul class="services-nav">
-              <li class="active">
-               <a href="#">Доставка</a>
-             </li>
-             <li>
-               <a href="#">Гарантия</a>
-             </li>
-             <li>
-                <a href="#">Кредит</a>
-              </li>
+              <li><a class="element-service-nav active-service" href="#">Доставка</a></li>
+              <li><a class="element-service-nav" href="#">Гарантия</a></li>
+              <li><a class="element-service-nav" href="#">Кредит</a></li>
             </ul>
-            <div class="services-main">
+            <div class="services-main visually-hidden">
              <h3>доставка</h3>
              <p>
                Мы с удовольствие доставим ваш товар прямо<br>
@@ -233,12 +227,13 @@
             </p>
             <img src="img/garant.png" width="389" height="283" alt="Гарантия">
            </div>
-           <div class="services-main visually-hidden">
+           <div class="services-main">
             <h3>кредит</h3>
             <p>
               Залезть в долговую яму стало проще!<br>
               Кредитные консультанты придут вам на помощь.
             </p>
+            <a class="btn-credit-order" href>отправить заявку</a>
             <img src="img/credit.png" width="465" height="285" alt="Кредит">
             </div>
           </div>
@@ -320,27 +315,31 @@
       </div>
       <!-- Большая карта -->
       <div class="item-map-big">
-        <button class="btn-closed"><img src="img/i/icon-close.svg" alt="Закрыть окно"></button>
         <img src="img/map-big.jpg" width="970" height="476" alt="Карта проезда">
+        <button class="btn-closed"><img src="img/i/icon-close.svg" alt="Закрыть окно"></button>
       </div>
       <!-- Модальное окно Форма обратной связи -->
-      <div class="item-feedback">
-        <button class="btn-closed"><img src="img/i/icon-close.svg" alt="Закрыть окно"></button>
+      <div class="item-feedback visually-hidden">
         <form class="form-feedback" action="#" method="post">
-          <label class="main-form-label">
-            <span class="main-form-label-text">Ваше имя:</span>
-            <input class="main-form-label-input" type="text" name="username" placeholder="Имя Фамилия" required>
-          </label>
-          <label class="main-form-label">
-            <span class="main-form-label-text">Ваше e-mail:</span>
-            <input class="main-form-label-input" type="email" name="email" placeholder="email@example.com" required>
-          </label>
-          <label class="main-form-label">
-            <span class="main-form-label-text">Текст письма:</span>
-            <input class="main-form-label-input" type="text" name="massage" placeholder="В свободной форме" required>
-          </label>
-          <input type="submit" value="Отправить">
+          <div class="header-form-feedback">
+           <label class="main-form-label">
+              <span class="form-label-text">Ваше имя:</span>
+              <input class="form-label-input" type="text" name="username" placeholder="Имя Фамилия" required>
+            </label>
+            <label class="main-form-label">
+              <span class="form-label-text">Ваше e-mail:</span>
+              <input class="form-label-input" type="email" name="email" placeholder="email@example.com" required>
+            </label>
+            <label class="main-form-label">
+               <span class="form-label-text">Текст письма:</span>
+               <input class="form-label-input commit-input" type="text" name="massage" placeholder="В свободной форме" required>
+            </label>
+          </div>
+          <div class="footer-form-feedback">
+            <input class="btn-feedback" type="submit" value="Отправить">
+          </div>
         </form>
+        <button class="btn-item-added"><a href class="visually-hidden">Закрыть окно"</a></button>
       </div>
     </footer>
   </body>

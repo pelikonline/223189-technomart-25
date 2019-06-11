@@ -7,15 +7,15 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-  <header class="main-header">
+  <header class="catalog-header">
     <div class="top-header">                                          <!--------------- TOP HEADER  ----------------->
       <div class="top-header-wrap">
         <a class="logo" href="index.html">Техномарт</a>
         <form class="search-form" action="#" method="get">
           <label>
             <span class="visually-hidden">Поиск</span>
+            <input type="search" name="search" id="search" placeholder="Поиск:">
           </label>
-          <input type="search" name="search" id="search" placeholder="Поиск:">
         </form>
         <ul class="shop-panel">
           <li class="shop-panel-item">
@@ -24,8 +24,8 @@
               <span>0</span>
             </a>
           </li>
-          <li class="shop-panel-item active-cart">
-            <a class="item-cart" href="#">
+          <li class="shop-panel-item">
+            <a class="item-cart active-cart" href="#">
               Корзина:
               <span>10</span>
             </a>
@@ -58,14 +58,14 @@
     </section>
     <nav class="main-navigation">
       <div class="nav-wrap">
-        <ul class="site-navigation">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul>
+          <li><a class="element-navigation" href="index.html">Главная</a></li>
+          <li><a class="element-navigation" href="#">Компания</a></li>
+          <li><a class="element-navigation" href="#">Каталог</a></li>
+          <li><a class="element-navigation" href="#">Новости</a></li>
+          <li><a class="element-navigation" href="#">Спецпредложения</a></li>
+          <li><a class="element-navigation" href="#">Доставка</a></li>
+          <li><a class="element-navigation" href="#">Контакты</a></li>
         </ul>
       </div>
     </nav>
@@ -73,7 +73,7 @@
   <main class="container-catalog">
     <div class="top-catalog">
       <ul class="breadcrumbs">
-        <li> <a class="visually-hidden" href="index.html">Главная</a></li>
+        <li><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
         <li><a href="#">каталог</a></li>
         <li><a href="#">инструмент</a></li>
         <li><a href="#">перфораторы</a></li>
@@ -91,7 +91,8 @@
             <ul>
               <li class="filter-option">
                 <label class="filter-label">
-                  <input type="checkbox" name="bosch" checked> bosch
+                  <span class="icon-check-square"></span>
+                  <input class="input-check-square" type="checkbox" name="bosch" checked> bosch
                 </label>
               </li>
               <li class="filter-option">
@@ -301,17 +302,16 @@
         </div>
       </div>
       <!-- Модальное окно Товар добавлен в корзину -->
-      <div class="item-added">
+      <div class="item-added visually-hidden">
         <div class="header-item-added">
-          <button class="btn-item-added"><a href class="visually-hidden">Закрыть окно"</a></button>
+          <span class="icon-item-added"></span>
           <h4>Товар добавлен в корзину!</h4>
         </div>
         <div class="footer-item-added">
-          <ul>
-            <li><a class="btn-modal-checkout" href="#">оформить заказ</a></li>
-            <li><a class="btn-modal-continue" href="#">продолжить покупки</a></li>
-          </ul>
+          <a class="btn-modal-checkout" href="#">оформить заказ</a>
+          <a class="btn-modal-continue" href="#">продолжить покупки</a>
         </div>
+        <button class="btn-item-added"><a href class="visually-hidden">Закрыть окно</a></button>
       </div>
     </footer>
   </body>
