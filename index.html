@@ -8,24 +8,35 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="top-header">                                          <!--------------- TOP HEADER  ----------------->
+      <div class="top-header">
         <div class="top-header-wrap">
           <a class="logo" href="#">Техномарт</a>
           <form class="search-form" action="#" method="get">
             <label>
               <span class="visually-hidden">Поиск</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+              </svg>
               <input type="search" name="search" id="search" placeholder="Поиск:">
             </label>
           </form>
           <ul class="shop-panel">
             <li class="shop-panel-item">
               <a class="item-bookmark" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+                  <path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
+                </svg>
                 Закладки:
                 <span>0</span>
               </a>
             </li>
             <li class="shop-panel-item">
               <a class="item-cart" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle cx="4.5" cy="13.5" r="1.5"/>
+                  <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                </svg>
                 Корзина:
                 <span>0</span>
               </a>
@@ -36,38 +47,81 @@
           </ul>
         </div>
       </div>
-      <section class="info-header">                                           <!-------------- INFO HEADER ---------------->
-        <p class="description">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
+      <section class="info-header">
+        <h2>
+          <span class="visually-hidden">Информация для пользователя</span>
+        </h2>
+        <p class="description">
+          Интернет-магазин<br>
+          строительных материалов<br>
+          и инструментов для ремонта
+        </p>
         <div class="header-contacts">
           <p class="phone">
             <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+                <path d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/>
+              </svg>
           </p>
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user-panel">
-          <a class="user-enter" href="#">Войти</a>
+          <a class="user-enter" href="#">
+            Войти
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+              <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+              <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+            </svg>
+          </a>
           <a class="user-registration" href="#">Регистрация</a>
         </div>
-        <div class="user-active visually-hidden">         <!-- Личный кабинет активный (начало) -->
-          <span><img src="img/i/icon-user.svg" alt="Пользователь"></span>
-          <a class="user" href="#">Равшан Джамшутович</a>
-          <span><a href="#"><img src="img/i/icon-logout.svg" alt="Выход"></a></span>
-          <ul>
-            <li><a class="my-orders" href="#">Мои заказы</a></li>
-            <li><a class="private-office" href="#">Личный кабинет</a></li>
-          </ul>
+        <div class="user-panel-active visually-hidden">
+          <p class="user-name">
+            <a href="#" class="user-log">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
+              </svg>
+            </a>
+            <a href="#">Равшан Джамшутович</a>
+            <a href="#" class="user-logout">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
+                <g>
+                  <path d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
+                  <path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/>
+                </g>
+              </svg>
+            </a>
+          </p>
+          <p class="user-list">
+            <a href="#">Мои заказы</a>
+            <a href="#">Личный кабинет</a>
+          </p>
         </div>
       </section>
       <nav class="main-navigation">
         <div class="nav-wrap">
           <ul>
-            <li><a class="element-navigation" href="#">Главная</a></li>
-            <li><a class="element-navigation" href="#">Компания</a></li>
-            <li><a class="element-navigation" href="catalog.html">Каталог</a></li>
-            <li><a class="element-navigation" href="#">Новости</a></li>
-            <li><a class="element-navigation" href="#">Спецпредложения</a></li>
-            <li><a class="element-navigation" href="#">Доставка</a></li>
-            <li><a class="element-navigation" href="#">Контакты</a></li>
+            <li class="list-navigation">
+              <a class="element-navigation" href="#">Главная</a>
+            </li>
+            <li class="list-navigation">
+              <a class="element-navigation" href="#">Компания</a>
+            </li>
+            <li class="list-navigation">
+              <a class="element-navigation" href="catalog.html">Каталог</a>
+            </li>
+            <li class="list-navigation">
+              <a class="element-navigation" href="#">Новости</a>
+            </li>
+            <li class="list-navigation">
+              <a class="element-navigation" href="#">Спецпредложения</a>
+            </li>
+            <li class="list-navigation">
+              <a class="element-navigation" href="#">Доставка</a>
+            </li>
+            <li class="list-navigation">
+              <a class="element-navigation" href="#">Контакты</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -78,6 +132,7 @@
         <h2 class="visually-hidden">Промо-блок</h2>
         <ul class="promo-list">
           <li class="promo-item materials">
+            <div class="flag flag-new">новинка</div>
             <h3>Материалы</h3>
             <a class="btn-promo" href="#">на любой вкус</a>
           </li>
@@ -99,43 +154,70 @@
           </li>
           <li class="promo-slider">
             <ul class="slider">
-              <li class="slider-item visually-hidden">
-                <h3>дрели</h3>
-                <p>Соседям на радость!</p>
+              <li class="slider-item">
+                <div class="title-slider-item">
+                  <h3>дрели</h3>
+                  <p>Соседям на радость!</p>
+                </div>
                 <a class="btn-slider" href="catalog.html">открыть каталог</a>
                 <img src="img/slider/drills.jpg" width="620" height="266" alt="Дрели">
               </li>
-              <li class="slider-item">
-                <h3>перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
+              <li class="slider-item visually-hidden">
+                <div class="title-slider-item">
+                  <h3>перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                </div>
                 <a class="btn-slider" href="catalog.html">открыть каталог</a>
                 <img src="img/slider/perforators.jpg" width="620" height="266" alt="Перфораторы">
               </li>
-              <li>
-                <button class="btn-petals-left">Влево</button>
-                <button class="btn-pelals-right">Вправо</button>
-              </li>
-              <li>
-                <button class="btn-slide">Назад</button>
-                <button class="btn-slide">Вперед</button>
-              </li>
             </ul>
+            <div class="controls-slider">
+              <label class="btn-petals-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
+                  <path d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/>
+                </svg>
+                <span class="visually-hidden">Влево</span>
+              </label>
+              <label class="btn-petals-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
+                  <path d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/>
+                </svg>
+                <span class="visually-hidden">Вправо</span>
+              </label>
+            </div>
+            <div class="toggle-slider">
+              <label class="toggle-slide toggle-slide-1">
+                <span class="visually-hidden">Первый слайд</span>
+              </label>
+              <label class="toggle-slide toggle-slide-2">
+                <span class="visually-hidden">Второй слайд</span>
+              </label>
+            </div>
           </li>
         </ul>
-      </section>                    <!--конец Секции Промо-блока -->
-      <section class="popular-products">            <!--начало Секции Популярные Товары -->
+      </section>
+      <section class="popular-products">
         <div class="popular-products-header">
           <h2>популярные товары</h2>
-          <a class="btn-popular" href>все популярные товары</a>
+          <a class="btn-popular" href="#">все популярные товары</a>
         </div>
         <ul class="popular-list">
           <li class="catalog-item"> <!-- Товар 1 -->
             <div class="flag flag-new visually-hidden">новинка</div>
             <div class="actions">
-              <a href="#" class="buy">Купить</a>
+              <a href="#" class="buy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle cx="4.5" cy="13.5" r="1.5"/>
+                  <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                </svg>
+                Купить
+              </a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
-            <div class="image"><img width="218" height="170" src="img/products/perforator_4.jpg" alt="Перфоратор BOSH BGF 9000"></div>
+            <div class="image">
+              <img width="218" height="170" src="img/products/perforator_4.jpg" alt="Перфоратор BOSH BGF 9000">
+            </div>
             <div class="title">Перфоратор BOSCH<br> BFG 9000</div>
             <div class="discount">32 500 Р.</div>
             <div class="price">22 500 Р.</div>
@@ -143,10 +225,19 @@
           <li class="catalog-item"> <!-- Товар 2 -->
             <div class="flag flag-new visually-hidden">новинка</div>
             <div class="actions">
-              <a href="#" class="buy">Купить</a>
+              <a href="#" class="buy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle cx="4.5" cy="13.5" r="1.5"/>
+                  <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                </svg>
+                Купить
+              </a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
-            <div class="image"><img width="218" height="170" src="img/products/perforator_1.jpg" alt="Перфоратор BOSH BGF 3000"></div>
+            <div class="image">
+              <img width="218" height="170" src="img/products/perforator_1.jpg" alt="Перфоратор BOSH BGF 3000">
+            </div>
             <div class="title">Перфоратор BOSCH<br> BFG 3000</div>
             <div class="discount">22 500 Р.</div>
             <div class="price">15 500 Р.</div>
@@ -154,10 +245,19 @@
           <li class="catalog-item">  <!-- Товар 3 -->
             <div class="flag flag-new visually-hidden">новинка</div>
             <div class="actions">
-              <a href="#" class="buy">Купить</a>
+              <a href="#" class="buy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle cx="4.5" cy="13.5" r="1.5"/>
+                  <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                </svg>
+                Купить
+              </a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
-            <div class="image"><img width="218" height="170" src="img/products/perforator_2.jpg" alt="Перфоратор BOSH BGF 6000"></div>
+            <div class="image">
+              <img width="218" height="170" src="img/products/perforator_2.jpg" alt="Перфоратор BOSH BGF 6000">
+            </div>
             <div class="title">Перфоратор BOSCH<br> BFG 6000</div>
             <div class="discount">30 500 Р.</div>
             <div class="price">25 500 Р.</div>
@@ -165,33 +265,66 @@
           <li class="catalog-item">  <!-- Товар 4 -->
             <div class="flag flag-new">новинка</div>
             <div class="actions">
-              <a href="#" class="buy">Купить</a>
+              <a href="#" class="buy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle cx="4.5" cy="13.5" r="1.5"/>
+                  <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                </svg>
+                Купить
+              </a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
-            <div class="image"><img width="218" height="170" src="img/products/perforator_3.jpg" alt="Перфоратор BOSH BGF 2000"></div>
+            <div class="image">
+              <img width="218" height="170" src="img/products/perforator_3.jpg" alt="Перфоратор BOSH BGF 2000">
+            </div>
             <div class="title">Перфоратор BOSCH<br> BFG 2000</div>
             <div class="discount"><span class="visually-hidden">22 500 Р.</span></div>
             <div class="price">12 500 Р.</div>
           </li>
         </ul>
       </section>
-      <section class="popular-manufacturers"> <!--начало Секции Популярные Производители -->
+      <section class="popular-manufacturers">
         <div class="popular-manufacturers-header">
          <h2>популярные производители</h2>
-          <a class="btn-popular" href>все производители</a>
+          <a class="btn-popular" href="#">все производители</a>
         </div>
         <ul class="popular-brands">
-          <li><img src="img/brands/bosch.png" width="126" height="37" alt="Bosh"></li>
-          <li><img src="img/brands/makita.png" width="123" height="40" alt="Makita"></li>
-          <li><img src="img/brands/dewalt.png" width="146" height="44" alt="DeWALT"></li>
-          <li><img src="img/brands/interskol.png" width="200" height="88" alt="Интерскол"></li>
-          <li><img src="img/brands/hitachi.png" width="169" height="31" alt="Hitachi"></li>
-          <li><img src="img/brands/lg.png" width="121" height="73" alt="LG"></li>
-          <li><img src="img/brands/aeg.png" width="151" height="96" alt="AEG"></li>
-          <li><img src="img/brands/metabo.png" width="204" height="69" alt="Metabo"></li>
+          <li>
+            <img src="img/brands/bosch.png" width="126" height="37" alt="Bosh">
+            <span class="visually-hidden">Bosh</span>
+          </li>
+          <li>
+            <img src="img/brands/makita.png" width="123" height="40" alt="Makita">
+            <span class="visually-hidden">Makita</span>
+          </li>
+          <li>
+            <img src="img/brands/dewalt.png" width="146" height="44" alt="DeWALT">
+            <span class="visually-hidden">DeWALT</span>
+          </li>
+          <li>
+            <img src="img/brands/interskol.png" width="200" height="88" alt="Интерскол">
+            <span class="visually-hidden">Интерскол</span>
+          </li>
+          <li>
+            <img src="img/brands/hitachi.png" width="169" height="31" alt="Hitachi">
+            <span class="visually-hidden">Hitachi</span>
+          </li>
+          <li>
+            <img src="img/brands/lg.png" width="121" height="73" alt="LG">
+            <span class="visually-hidden">LG</span>
+          </li>
+          <li>
+            <img src="img/brands/aeg.png" width="151" height="96" alt="AEG">
+            <span class="visually-hidden">AEG</span>
+          </li>
+          <li>
+            <img src="img/brands/metabo.png" width="204" height="69" alt="Metabo">
+            <span class="visually-hidden">Metabo</span>
+          </li>
         </ul>
       </section>
-      <section class="services"> <!-----------------------------------------------------------начало Секции Сервисы -->
+      <section class="services">
         <div class="services-wrap">
           <div class="services-top">
             <h2>сервисы</h2>
@@ -202,11 +335,17 @@
           </div>
           <div class="services-page">
             <ul class="services-nav">
-              <li><a class="element-service-nav active-service" href="#">Доставка</a></li>
-              <li><a class="element-service-nav" href="#">Гарантия</a></li>
-              <li><a class="element-service-nav" href="#">Кредит</a></li>
+              <li>
+                <a class="element-service-nav active-service" href="#">Доставка</a>
+              </li>
+              <li>
+                <a class="element-service-nav" href="#">Гарантия</a>
+              </li>
+              <li>
+                <a class="element-service-nav" href="#">Кредит</a>
+              </li>
             </ul>
-            <div class="services-main visually-hidden">
+            <div class="services-main">
              <h3>доставка</h3>
              <p>
                Мы с удовольствие доставим ваш товар прямо<br>
@@ -227,13 +366,13 @@
             </p>
             <img src="img/garant.png" width="389" height="283" alt="Гарантия">
            </div>
-           <div class="services-main">
+           <div class="services-main visually-hidden">
             <h3>кредит</h3>
             <p>
               Залезть в долговую яму стало проще!<br>
               Кредитные консультанты придут вам на помощь.
             </p>
-            <a class="btn-credit-order" href>отправить заявку</a>
+            <a class="btn-credit-order" href="#">отправить заявку</a>
             <img src="img/credit.png" width="465" height="285" alt="Кредит">
             </div>
           </div>
@@ -256,7 +395,9 @@
           <p>Вы можете забрать товар сами,<br>
               заехав в наш офис:
           </p>
-          <img src="img/map.jpg" width="300" height="158" alt="Карта">
+          <a href="#">
+            <img src="img/map.jpg" width="300" height="158" alt="Карта">
+          </a>
           <a class="btn-contacts" href="#">заблудились? напишите нам!</a>
         </div>
       </section>
@@ -265,11 +406,21 @@
       <div class="footer-top">
         <a class="footer-logo" href="#">Техномарт</a>
         <ul class="bottom-navigation">
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li>
+            <a href="#">Компания</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
         </ul>
       </div>
       <div class="footer-info">
@@ -278,10 +429,18 @@
           +7 (812) 555-05-55
         </p>
         <ul class="footer-menu">
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
+          <li>
+            <a href="#">Материалы</a>
+          </li>
+          <li>
+            <a href="#">Техника</a>
+          </li>
+          <li>
+            <a href="#">Инструмент</a>
+          </li>
+          <li>
+            <a href="#">Спецпредложения</a>
+          </li>
         </ul>
       </div>
       <div class="footer-additionally">
@@ -308,15 +467,21 @@
             </li>
           </ul>
           <div class="feedback">
-            <p>Обратная связь:<br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-            <p>Разработано —<br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+            <p>
+              Обратная связь:<br>
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p>
+              Разработано —<br>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
           </div>
         </div>
       </div>
       <!-- Большая карта -->
-      <div class="item-map-big">
+      <div class="item-map-big visually-hidden">
         <img src="img/map-big.jpg" width="970" height="476" alt="Карта проезда">
-        <button class="btn-closed"><img src="img/i/icon-close.svg" alt="Закрыть окно"></button>
+        <button class="btn-item-added" aria-label="Закрыть окно"></button>
       </div>
       <!-- Модальное окно Форма обратной связи -->
       <div class="item-feedback visually-hidden">
@@ -332,14 +497,15 @@
             </label>
             <label class="main-form-label">
                <span class="form-label-text">Текст письма:</span>
-               <input class="form-label-input commit-input" type="text" name="massage" placeholder="В свободной форме" required>
+               <textarea class="form-label-input commit-input" name="massage" placeholder="В свободной форме" required>
+               </textarea>
             </label>
           </div>
           <div class="footer-form-feedback">
             <input class="btn-feedback" type="submit" value="Отправить">
           </div>
         </form>
-        <button class="btn-item-added"><a href class="visually-hidden">Закрыть окно"</a></button>
+        <button class="btn-item-added" aria-label="Закрыть окно"></button>
       </div>
     </footer>
   </body>
