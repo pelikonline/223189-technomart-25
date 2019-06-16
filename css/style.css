@@ -123,6 +123,21 @@ a {
   position: relative;
 }
 
+.search-form input {
+  width: 270px;
+  height: 42px;
+  border: 0;
+  padding: 0 10px 0 49px;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.search-form input:hover {
+  background-color: #212a3a;
+}
+
 .search-form svg {
   position: absolute;
   top: 12px;
@@ -132,15 +147,6 @@ a {
   height: 17px;
   fill: #ffffff;
   opacity: 0.3;
-}
-
-.search-form svg + .search-form input:hover {      /* --------!!!!!!! ------------ */
-  opacity: 1;
-}
-
-.search-form svg:focus,
-.search-form svg:active {
-  fill: #ee3643;
 }
 
 .search-form input {
@@ -159,9 +165,20 @@ a {
 }
 
 .search-form input:focus {
-  color: black;                   /* не работает */
+  color: black;
   background-color: #ffffff;
 }
+
+.search-input:hover + svg {
+  fill: #ffffff;
+  opacity: 1.0;
+}
+
+.search-input:focus + svg {
+  fill: #ee3643;
+  opacity: 1.0;
+}
+
 
 /* -- SHOP-PANEL --*/
 .shop-panel {
