@@ -82,7 +82,7 @@ a {
   height: 42px;
   color: #ffffff;
   background-color: #293449;
-  margin-bottom: 44px;
+  margin-bottom: 46px;
 }
 
 .top-header-wrap {
@@ -96,13 +96,15 @@ a {
 
 /*--  LOGO --*/
 .logo {
+  display: block;
+  width: 220px;
   font-family: "Cuprum", Arial, sans-serif;
-  font-size: 23px;
-  line-height: 23px;
+  font-size: 24px;
+  line-height: 24px;
   text-transform: uppercase;
   color: #ffffff;
   margin: auto 0;
-  padding: 10px 57px;
+  padding: 11px 0 7px;
   background-color: #ee3643;
   text-align: center;
   box-shadow: 0 5px 0 0 #b52933;
@@ -222,7 +224,7 @@ a {
 .item-bookmark svg {
   position: absolute;
   top: 12px;
-  left: 17px;
+  left: 14px;
 
   width: 17px;
   height: 17px;
@@ -258,10 +260,10 @@ a {
 .item-cart svg {
   position: absolute;
   top: 12px;
-  left: 18px;
+  left: 17px;
 
-  width: 17px;
-  height: 17px;
+  width: 15px;
+  height: 15px;
   fill: #ffffff;
   opacity: 0.3;
 }
@@ -301,18 +303,19 @@ a {
 /* -- INFO HEADER --*/
 .info-header {
   font-family: "Cuprum", Arial, sans-serif;
-  padding: 0;
+  padding-left: 53px;
   width: 940px;
   height: 68px;
-  margin-bottom: 47px;
+  margin-bottom: 44px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .description {
   margin: 0;
-  padding-top: 4px;
+  padding-top: 3px;
   width: 197px;
   font-size: 16px;
   font-style: italic;
@@ -329,14 +332,15 @@ a {
 .phone {
   margin: 0;
   width: 270px;
+  text-align: center;
   position: relative;
 }
 
 
 .phone a {
   display: block;
+  padding: 9px 0 9px 21px;
   margin: 0;
-  padding: 9px 0 9px 71px;
 
   color: #e9292a;
   font-size: 21px;
@@ -365,8 +369,8 @@ a {
 
 /* -- Личный кабинет --*/
 .user-panel {
-  margin: 2px 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .user-panel a {
@@ -608,15 +612,15 @@ a {
 }
 
 .promo-item:nth-of-type(4) {
-  margin-left: 638px;
+  margin-left: 640px;
 }
 
 .promo-item:nth-of-type(5) {
-  margin-left: 638px;
+  margin-left: 640px;
 }
 
 .promo-item h3 {
-  margin-top: 20px;
+  margin-top: 21px;
   margin-left: 23px;
   margin-bottom: 13px;
   padding: 0;
@@ -628,7 +632,7 @@ a {
 .btn-promo {
   display: block;
   width: 135px;
-  margin-left: 25px;
+  margin-left: 23px;
   padding: 10px 0;
 
   color: #ffffff;
@@ -896,7 +900,8 @@ a {
  /* -- POPULAR PRODUCTS --*/
 
 .popular-products {
-  margin-bottom: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .popular-products-header {
@@ -917,7 +922,7 @@ a {
   padding-left: 30px;
   font-size: 30px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 500;
   color: #32425c;
   text-transform: uppercase;
 }
@@ -929,6 +934,7 @@ a {
   list-style: none;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .btn-popular {
@@ -958,7 +964,7 @@ a {
 /* -- POPULAR MANUFACTURES --*/
 
 .popular-manufacturers {
-  margin-bottom: 65px;
+  margin-bottom: 64px;
 }
 
 .popular-manufacturers-header {
@@ -980,7 +986,7 @@ a {
   line-height: 30px;
   font-weight: 400;
   color: #32425c;
-  text-transform: uppercase;
+  text-transform: uppercase;;
 }
 
 .popular-brands {
@@ -1013,7 +1019,13 @@ a {
 }
 
 .popular-brands img {
-  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.popular-brands a {
+  margin: 0;
+  padding: 0;
 }
 
 /* --СЕРВИСЫ --*/
@@ -1262,7 +1274,15 @@ a {
 }
 
 .contacts img {
+  width: 300px;
+  height: 158px;
+}
+
+.img-click {
+  display: block;
   margin-bottom: 34px;
+  padding: 0;
+  border: none;
 }
 
 .btn-contacts {
@@ -1664,6 +1684,7 @@ a {
 
   width: 700px;
   height: 38px;
+  margin-bottom: 20px;
 }
 
 .sorting-head {
@@ -1748,13 +1769,13 @@ a {
 /* ---------------NEW UL CARTS--------------------- */
 .popular-list {
   width: 940px;
-  margin-bottom: 10px;
+  margin: 0;
   padding: 0;
 }
 
 .catalog-list {
   width: 700px;
-  margin: 20px 0;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -1766,9 +1787,8 @@ a {
   font-family: "PT Sans", Arial, sans-serif;
   position: relative;
   display: inline-block;
-  min-height: 318px;
   width: 218px;
-  margin: 0;
+  margin-bottom: 20px;
   padding: 0;
 
   line-height: 20px;
@@ -1778,7 +1798,7 @@ a {
   border: 1px solid #ccc;
 }
 
-.catalog-list .catalog-item {
+.catalog-item {
   margin-bottom: 20px;
 }
 
@@ -1891,7 +1911,7 @@ a {
   line-height: 20px;
   font-weight: 700;
   padding: 0 25px;
-  margin-top: 7px;
+  margin-top: 8px;
   margin-bottom: 11px;
 }
 
@@ -1907,18 +1927,20 @@ a {
 }
 
 .catalog-item .price {
+  display: block;
+  width: 141px;
+  padding: 10px 0;
+  margin-left: 42px;
+  margin-bottom: 20px;
+
   font-size: 17px;
   line-height: 18px;
-  font-weight: bold;
-
-  position: relative;
-  width: 80px;
-  margin: 7px auto;
-  padding: 11px 30px;
-
+  font-weight: 700;
   color: white;
   background: #ee3643;
   border-radius: 3px;
+
+  position: relative;
 }
 
 .catalog-item .price:after {
@@ -1931,9 +1953,10 @@ a {
   width: 0;
   height: 0;
 
-  border: 20px solid white;
+  border: 19px solid white;
   border-left-color: #ee3643;
 }
+
 /*---------------- Пагинация --------------------*/
 .pagination-list {
   padding: 0;
@@ -2062,14 +2085,16 @@ a {
 
 /* -- FOOTER LOGO --*/
 .footer-logo {
+  display: block;
+  width: 220px;
   font-family: "Cuprum", Arial, sans-serif;
-  font-size: 23px;
-  line-height: 23px;
+  font-size: 29px;
+  line-height: 29px;
   text-transform: uppercase;
   color: #ffffff;
 
   margin: 0;
-  padding: 21px 57px;
+  padding: 17px 0;
   background-color: #ee3643;
   text-align: center;
 
@@ -2078,7 +2103,7 @@ a {
 
 .footer-info {
   margin-top: 15px;
-  padding-bottom: 29px;
+  padding-bottom: 31px;
   width: 940px;
   display: flex;
   flex-direction: row;
@@ -2153,8 +2178,8 @@ a {
 
 .footer-additionally {
   display: flex;
-  padding-top: 22px;
-  padding-bottom: 30px;
+  padding-top: 21px;
+  padding-bottom: 20px;
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
@@ -2268,7 +2293,7 @@ a {
 }
 
 /*------------------------ Попап Обратная связь ----------------------------*/
-.item-feedback {
+.modal-feedback {
   font-family: "Cuprum", Arial, sans-serif;
   position: fixed;
 
@@ -2283,6 +2308,12 @@ a {
   border-top: 7px solid #ee3643;
   box-shadow: 0 15px 32px 0 #ccc;
   z-index: 500;
+  display: none;
+}
+
+.modal-feedback-show {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .header-form-feedback {
@@ -2343,8 +2374,25 @@ a {
   width: 429px;
   height: 87px;
 }
+
+.btn-modal-added {
+  border: none;
+
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  background-image: url("../img/i/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  width: 21px;
+  height: 21px;
+  top: 9px;
+  right: 9px;
+}
+
 /*------------------------ Попап ТОВАР добавлен в корзину ----------------------------*/
-.item-added {
+.modal-added {
   font-family: "Cuprum", Arial, sans-serif;
   position: fixed;
   top: 50%;
@@ -2360,7 +2408,15 @@ a {
 
   box-shadow: 0 15px 32px 0 #ccc;
   z-index: 500;
+
+  display: none;
 }
+
+.modal-added-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
 
 .header-item-added {
   display: flex;
@@ -2400,7 +2456,7 @@ a {
   transform: rotate(-45deg);
 }
 
-.item-added h4 {
+.modal-added h4 {
   margin: 0;
   padding: 0;
 
@@ -2454,7 +2510,7 @@ a {
 
 /* ----------------------- ПОПАП большая карта -----------*/
 
-.item-map-big {
+.modal-map-big {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2464,15 +2520,74 @@ a {
   height: 476px;
 
   box-shadow: 0 0 25px 5px #b8b8b8;
-  z-index: 300;
+  z-index: 900;
+
+  display: none;
 }
 
-.item-map-big img {
+.modal-map-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-map-big iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
+.modal-map-big p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
+.modal-map-big img {
   max-width: 100%;
 }
 
+.btn-modal-map {
+  border: none;
 
-/* ----------------------- Скрыть -----------*/
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  background-image: url("../img/i/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  width: 21px;
+  height: 21px;
+  top: 9px;
+  right: 9px;
+
+  z-index: 5;
+}
+
+/*-- Анимация поппапов --*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*-- Скрыть --*/
 
 .visually-hidden {
   position: absolute;
