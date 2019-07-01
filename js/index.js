@@ -1,3 +1,5 @@
+'use strict';
+
 var link = document.querySelector(".btn-contacts");
 var popup = document.querySelector(".modal-feedback");
 var close = popup.querySelector(".btn-modal-added");
@@ -32,19 +34,4 @@ mapLink.addEventListener("click", function (evt) {
 mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.remove("modal-map-show");
-});
-
-
-var adLink = document.querySelector(".buy");
-var adPopup = document.querySelector(".modal-added");
-var adClose = adPopup.querySelector(".btn-modal-added");
-
-adLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  adPopup.classList.add("modal-added-show");
-});
-
-adClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  adPopup.classList.remove("modal-added-show");
 });
